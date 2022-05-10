@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap");
+:root {
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+  --container-width-sm: 95%;
+  --color-white: #fff;
+  --color-black: #000;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+
+  line-height: 1.7;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3.8rem;
+}
+h3 {
+  font-size: 2.6rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+span {
+  display: block;
+}
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+/* Start Page1 */
+.page1 {
+  height: 100vh;
+  background-image: url("îmages/1646390111.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.page1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+.page1_container {
+  position: relative;
+  z-index: 1;
+  color: var(--color-white);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.page1_container p {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.page1_container .arrow-right {
+  background-color: #343f81;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0 0 1rem rgb(0, 0, 0, 0.4);
+  transition: 0.5s;
+  border: 2px solid #343f81;
+}
+.page1_container .arrow-right:hover {
+  border-color: var(--color-black);
+  background-color: transparent;
+  color: var(--color-black);
+}
+/* Start Page2 */
+.page2 {
+  padding: 5rem 0;
+  border-bottom: 5px solid var(--color-black);
+}
+.page2_container i {
+  font-size: 2.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.page2_container h3 {
+  margin: 2rem 0;
+}
+.page2_container .gender {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.page2_container .gender .gender-box {
+  border: 2px solid var(--color-black);
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  text-transform: capitalize;
+  background-color: #eceaeb;
+  border-radius: 1rem;
+  transition: 0.5s;
+}
+.page2_container .gender .gender-box:hover {
+  background-color: #c4c4c4;
+  border-color: #c4c4c4;
+}
+.page2_container .gender .gender-box span {
+  font-size: 1.5rem;
+}
+.page2_container .person-info {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.page2_container .person-info .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.page2_container .person-info .box label {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.page2_container .person-info .box input {
+  align-self: flex-start;
+  width: 5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  background-color: #eceaeb;
+  outline: none;
+  border: none;
+  text-align: center;
+  transition: 0.5s;
+  border: 2px solid #eceaeb;
+}
+.page2_container .person-info .box input:hover {
+  border-color: var(--color-black);
+  background-color: #c4c4c4;
+}
+/* Start Page3 */
+.page3 {
+  padding: 5rem 0;
+}
+.page3_container h5 {
+  color: #a8adda;
+}
+.page3_container .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20rem;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+.page3_container .title i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.page3_container .exercices {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+.page3_container .exercices .exercice {
+  width: 20rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+  text-transform: capitalize;
+  transition: 0.5s;
+  box-shadow: 0 0 1rem rgb(0, 0, 0, 0.4);
+}
+.page3_container .exercices .exercice:hover {
+  transform: scale(1.1);
+}
+.page3_container .exercices .exercice::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.493);
+  z-index: 0;
+}
+.page3_container .exercices .exercice:nth-of-type(1) {
+  background-image: url("îmages/16-laws-of-shoulder-training-cellucor-facebook-960x540.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.page3_container .exercices .exercice:nth-of-type(2) {
+  background-image: url("îmages/useful-back-exercises.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.page3_container .exercices .exercice:nth-of-type(3) {
+  background-image: url("îmages/images (3).jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.page3_container .exercices .exercice .header,
+.page3_container .exercices .exercice .body {
+  position: relative;
+  z-index: 1;
+}
+.page3_container .exercices .exercice .header span {
+  color: red;
+}
+.page3_container .exercices .exercice .header h4 {
+  font-size: 1.5rem;
+}
+.page3_container .exercices .exercice .body .body-end {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page3_container .exercices .exercice .body .body-end .btn {
+  border: none;
+  background: rgba(255, 0, 0, 0.61);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: 2px solid rgba(255, 0, 0, 0.61);
+  transition: 0.5s;
+}
+.page3_container .exercices .exercice .body .body-end .btn:hover {
+  background: transparent;
+}
+/* Start Page 4 */
+.page4 {
+  padding: 5rem 0;
+  background-image: url("îmages/download.jpg");
+  background-size: cover;
+  position: relative;
+}
+.page4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.4);
+  z-index: 0;
+}
+.page4_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+.page4_container .box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.page4_container .box h3 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: var(--color-white);
+}
+.page4_container .box .content-box {
+  height: 5rem;
+  background: #c4c4c4;
+  display: flex;
+  align-items: center;
+  padding: 3rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgb(0, 0, 0, 0.2);
+}
+.page4_container .box .content-box img {
+  width: 5rem;
+  border-radius: 50%;
+  border: 5px solid #eceaeb;
+}
