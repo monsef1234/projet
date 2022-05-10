@@ -5,6 +5,9 @@
   --container-width-sm: 95%;
   --color-white: #fff;
   --color-black: #000;
+  --color-one: #343f81;
+  --color-two: #eceaeb;
+  --color-three: #c4c4c4;
 }
 *,
 *::after,
@@ -17,7 +20,6 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-
   line-height: 1.7;
 }
 h1,
@@ -42,12 +44,6 @@ h4 {
 h5 {
   font-size: 1.2rem;
 }
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-}
 img {
   display: block;
   width: 100%;
@@ -61,12 +57,10 @@ span {
   width: var(--container-width-lg);
   margin: 0 auto;
 }
-/* Start Page1 */
+/* Start Page 1 */
 .page1 {
   height: 100vh;
   background-image: url("îmages/1646390111.jpeg");
-  background-size: cover;
-  background-position: center;
   background-size: 100% 100%;
   position: relative;
 }
@@ -95,7 +89,7 @@ span {
   font-weight: bold;
 }
 .page1_container .arrow-right {
-  background-color: #343f81;
+  background-color: var(--color-one);
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
@@ -105,14 +99,15 @@ span {
   cursor: pointer;
   box-shadow: 0 0 1rem rgb(0, 0, 0, 0.4);
   transition: 0.5s;
-  border: 2px solid #343f81;
+  border: 2px solid var(--color-one);
 }
 .page1_container .arrow-right:hover {
   border-color: var(--color-black);
   background-color: transparent;
   color: var(--color-black);
 }
-/* Start Page2 */
+/*  End Page 1  */
+/* Start Page 2 */
 .page2 {
   padding: 5rem 0;
   border-bottom: 5px solid var(--color-black);
@@ -140,13 +135,13 @@ span {
   gap: 1.5rem;
   padding: 1.5rem 0;
   text-transform: capitalize;
-  background-color: #eceaeb;
+  background-color: var(--color-two);
   border-radius: 1rem;
   transition: 0.5s;
 }
 .page2_container .gender .gender-box:hover {
-  background-color: #c4c4c4;
-  border-color: #c4c4c4;
+  background-color: var(--color-three);
+  border-color: var(--color-three);
 }
 .page2_container .gender .gender-box span {
   font-size: 1.5rem;
@@ -175,18 +170,19 @@ span {
   font-size: 1rem;
   font-weight: 600;
   border-radius: 1rem;
-  background-color: #eceaeb;
+  background-color: var(--color-two);
   outline: none;
   border: none;
   text-align: center;
   transition: 0.5s;
-  border: 2px solid #eceaeb;
+  border: 2px solid var(--color-two);
 }
 .page2_container .person-info .box input:hover {
   border-color: var(--color-black);
-  background-color: #c4c4c4;
+  background-color: var(--color-three);
 }
-/* Start Page3 */
+/*  End Page 2 */
+/* Start Page 3 */
 .page3 {
   padding: 5rem 0;
 }
@@ -283,6 +279,7 @@ span {
 .page3_container .exercices .exercice .body .body-end .btn:hover {
   background: transparent;
 }
+/*  End Page 3 */
 /* Start Page 4 */
 .page4 {
   padding: 5rem 0;
@@ -319,7 +316,7 @@ span {
 }
 .page4_container .box .content-box {
   height: 5rem;
-  background: #c4c4c4;
+  background: var(--color-three);
   display: flex;
   align-items: center;
   padding: 3rem 1rem;
@@ -329,8 +326,9 @@ span {
 .page4_container .box .content-box img {
   width: 5rem;
   border-radius: 50%;
-  border: 5px solid #eceaeb;
+  border: 5px solid var(--color-two);
 }
+/*  End Page 4 */
 /* Start Page 5  */
 .page5 {
   padding: 5rem 0;
@@ -358,7 +356,6 @@ span {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  /* margin-top: 2rem; */
 }
 .page5_container .boxes .box {
   border-radius: 1rem;
@@ -444,7 +441,7 @@ span {
   background-color: transparent;
   border-color: var(--color-black);
 }
-
+/*  End Page5  */
 /* Media Query [TABLET] */
 @media screen and (max-width: 1024px) {
   .container {
