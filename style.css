@@ -331,3 +331,51 @@ span {
   border-radius: 50%;
   border: 5px solid #eceaeb;
 }
+/* Media Query [TABLET] */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+}
+/* Media Query [PHONE] */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  h1 {
+    font-size: 4.7rem;
+  }
+  h2 {
+    font-size: 3.4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+  .page2_container .gender {
+    flex-direction: column;
+  }
+  .page2_container .gender .gender-box {
+    width: 100%;
+  }
+  .page2_container .person-info {
+    align-items: center;
+  }
+  .page2_container .person-info .box label {
+    text-align: center;
+  }
+  .page2_container .person-info .box input {
+    margin: 0 auto;
+  }
+  .page3_container h5 {
+    margin-bottom: 1rem;
+  }
+  .page3_container .title {
+    margin: 0 auto;
+  }
+  .page3_container .exercices {
+    align-items: center;
+  }
+}
